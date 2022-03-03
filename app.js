@@ -1,5 +1,3 @@
-//jshint esversion:6
-
 const express = require("express");
 const bodyParser = require("body-parser");
 const mongoose = require("mongoose");
@@ -135,5 +133,5 @@ app.get("/about", function (req, res) {
 });
 const PORT = process.env.PORT || 3000;
 app.listen(PORT, function () {
-  console.log('Server started on port ${ PORT }');
+  console.log('Server started on port '+ PORT);
 });
